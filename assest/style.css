@@ -1,0 +1,226 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.delete {
+  color: rgb(180, 23, 23);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.delete:hover,
+.delete:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal içeriği için stil */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Başlık alanı için stil */
+.modal-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* URL input alanı için stil */
+.modal-url input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Öncelik input alanı için stil */
+.modal-priority input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Açıklama input alanı için stil */
+.modal-description textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input_todo {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form_todo {
+  width: 40%;
+}
+
+.content_todo {
+  max-height: 400px;
+  overflow-y: scroll;
+  width: 60%;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .todo {
+    display: block;
+  }
+
+  .form_todo {
+    width: 100%;
+  }
+
+  .content_todo {
+    width: 100%;
+    padding: 10px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .todo {
+    display: flex;
+  }
+
+}
+
+
+.todo_button {
+  text-align: right;
+}
+
+
+.content_todo table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.content_todo table thead th {
+  background-color: #f0f0f0;
+  padding: 10px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+
+.content_todo table tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.content_todo table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.content_todo table tbody tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.content_todo table tbody td:first-child {
+  border-left: none;
+}
+
+.content_todo table tbody td:last-child {
+  border-right: none;
+}
+
+
+.list_todo table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.list_todo table thead th {
+  background-color: #f0f0f0;
+  padding: 10px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+
+.list_todo table tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.list_todo table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.list_todo table tbody tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.list_todo table tbody td:first-child {
+  border-left: none;
+}
+
+.list_todo table tbody td:last-child {
+  border-right: none;
+}
+
+.list_todo {
+  width: 100%;
+  padding: 30px;
+
+  background-color: white;
+}
+
+.search input {
+  width: 100%;
+}
+
+.search {
+  display: flex;
+}
+
+.overlay_todo {
+  display: none;
+  background-color: #0000002e;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
