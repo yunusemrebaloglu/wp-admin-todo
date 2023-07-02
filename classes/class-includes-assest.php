@@ -18,7 +18,7 @@ class IncludesAssest
     public function load_stylesheets()
     {
         $css = [
-            plugin_dir_url('/') . 'admin-todo/assest/style.css'
+            PLUGIN_URL_ATD . 'assest/style.css'
         ];
 
         foreach ($css as $key =>  $path) {
@@ -32,7 +32,7 @@ class IncludesAssest
     public function add_js()
     {
         $jss = [
-            plugin_dir_url('/') . 'admin-todo/assest/script.js'
+            PLUGIN_URL_ATD . 'assest/script.js'
         ];
     
 

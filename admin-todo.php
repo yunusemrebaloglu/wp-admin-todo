@@ -18,6 +18,7 @@ Text Domain: admin-todo-list
 */
 
 define('PLUGIN_DIR_ATD', __DIR__ . '/');
+define('PLUGIN_URL_ATD', plugins_url(plugin_basename(PLUGIN_DIR_ATD)).'/');
 
 require_once PLUGIN_DIR_ATD."classes/autoload.php";
 new Plugin_ATD\Autoload_ATD();
