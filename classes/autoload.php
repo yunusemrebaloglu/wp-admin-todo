@@ -1,6 +1,6 @@
 <?php
 
-namespace Plugin_ATD;
+namespace WPATDPlugin;
 
 define('PLUGIN_CLASS_DIR_ATD', __DIR__ . '/');
 
@@ -25,10 +25,10 @@ class Autoload_ATD
             }
             if ($is_child) {
                 require $is_child . '/' . $name;
-                $className = "\Plugin_ATD\\" . $is_child . '\\' . str_replace(["Class", "-", ".php"], ["", "", ""], ucwords($name, "-"));
+                $className = "\WPATDPlugin\\" . $is_child . '\\' . str_replace(["Class", "-", ".php"], ["", "", ""], ucwords($name, "-"));
             } else {
                 require  $name;
-                $className = "\Plugin_ATD\\" . str_replace(["Class", "-", ".php"], ["", "", ""], ucwords($name, "-"));
+                $className = "\WPATDPlugin\\" . str_replace(["Class", "-", ".php"], ["", "", ""], ucwords($name, "-"));
             }
             new $className();
         }

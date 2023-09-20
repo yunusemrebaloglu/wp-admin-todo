@@ -1,3 +1,4 @@
+/* Modal stil */
 .modal {
   display: none;
   position: fixed;
@@ -125,11 +126,9 @@
 
 }
 
-
 .todo_button {
   text-align: right;
 }
-
 
 .content_todo table {
   width: 100%;
@@ -164,7 +163,6 @@
 .content_todo table tbody td:last-child {
   border-right: none;
 }
-
 
 .list_todo table {
   width: 100%;
@@ -203,7 +201,6 @@
 .list_todo {
   width: 100%;
   padding: 30px;
-
   background-color: white;
 }
 
